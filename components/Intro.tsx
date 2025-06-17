@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { BsArrowRight, BsLinkedin } from "react-icons/bs"
+import { BsArrowRight, BsTwitterX } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from "react-icons/fa"
 import Link from "next/link"
@@ -22,6 +22,27 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
   const t = useTranslations("IntroSection")
   const [playHover] = useSound("/bubble.wav", { volume: 0.5 })
+
+  const handleDownloadCV = () => {
+    if (activeLocale !== "en") {
+      const messages = {
+        ja: "申し訳ございませんが、他の言語は理解できませんでした。英語の履歴書のみご利用いただけます。😅",
+        fr: "Désolé, je n'ai pas réussi à apprendre les autres langues. Seul le CV en anglais est disponible. 😅",
+        de: "Entschuldigung, ich habe die anderen Sprachen nicht verstanden. Nur der englische Lebenslauf ist verfügbar. 😅"
+      }
+
+      const message = messages[activeLocale as keyof typeof messages] ||
+        "Sorry, I didn't learn other languages properly. Only English resume is available. 😅"
+
+      alert(message)
+    }
+
+    // Always download English version
+    const link = document.createElement('a')
+    link.href = '/English.pdf'
+    link.download = 'KayanoJackal-Resume.pdf'
+    link.click()
+  }
 
   return (
     <section
@@ -143,30 +164,24 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link> */}
 
-        <Link
-          target="_blank"
+        <button
+          onClick={handleDownloadCV}
           className="bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href={
-            activeLocale == "en"
-              ? "/joy-fullstack-resume.pdf"
-              : "/前端开发-彭郁洁.pdf"
-          }
-          locale={false}
         >
           {t("download_cv")}
           <HiDownload />
-        </Link>
+        </button>
         <a
           className="bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/joy-yujiepeng/"
+          href="https://x.com/KayanoJackal"
           target="_blank"
         >
-          <BsLinkedin />
+          <BsTwitterX />
         </a>
 
         <a
           className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Codefreyy"
+          href="https://github.com/KayanoLiam"
           target="_blank"
         >
           <FaGithubSquare />
