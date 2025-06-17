@@ -4,7 +4,9 @@
         "name": "KayanoJackal",
         "short_intro": "Willkommen zu meinem völlig legitimen Portfolio! (Spoiler: Ich habe keine echten Fähigkeiten)",
         "download_cv": "Lebenslauf herunterladen (Warnung: Größtenteils leer)",
-        "blog": "Blog (Wo ich so tue, als wüsste ich etwas)"
+        "blog": "Blog (Wo ich so tue, als wüsste ich etwas)",
+        "specialty": "Meine Spezialität ist",
+        "specialty_text": "Dinge mit React kaputt zu machen"
     },
     "SectionName": {
         "about": "Über mich (Die harte Wahrheit)",

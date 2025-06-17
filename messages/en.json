@@ -4,7 +4,9 @@
         "name": "KayanoJackal",
         "short_intro": "Welcome to my totally legitimate portfolio! (Spoiler: I have no actual skills)",
         "download_cv": "Download CV (Warning: Mostly blank)",
-        "blog": "Blog (Where I pretend to know things)"
+        "blog": "Blog (Where I pretend to know things)",
+        "specialty": "My specialty is",
+        "specialty_text": "breaking things with React"
     },
     "SectionName": {
         "about": "About me (The harsh truth)",

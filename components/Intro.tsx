@@ -96,10 +96,18 @@ export default function Intro() {
             >
               <TypeAnimation
                 sequence={[
-                  "Frontend Developer",
-                  1000,
-                  "Full Stack Developer",
-                  1000,
+                  "Professional Pretender",
+                  1500,
+                  "Stack Overflow Copy-Paster",
+                  1500,
+                  "Bug Creator",
+                  1500,
+                  "Console.log Debugger",
+                  1500,
+                  "Impostor Syndrome Sufferer",
+                  1500,
+                  "Tutorial Follower",
+                  1500,
                 ]}
                 wrapper="span"
                 speed={50}
@@ -109,12 +117,10 @@ export default function Intro() {
           </div>
         </motion.div>
         <p>{t("short_intro")}</p>
-        {activeLocale === "en" && (
-          <p>
-            My focus is{" "}
-            <span className="italic font-bold">React (Next.js)</span>.
-          </p>
-        )}
+        <p>
+          {t("specialty")}{" "}
+          <span className="italic font-bold">{t("specialty_text")}</span>.
+        </p>
       </motion.h1>
 
       <motion.div

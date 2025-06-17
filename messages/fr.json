@@ -4,7 +4,9 @@
         "name": "KayanoJackal",
         "short_intro": "Bienvenue sur mon portfolio totalement légitime ! (Spoiler : je n'ai aucune compétence réelle)",
         "download_cv": "Télécharger CV (Attention : principalement vide)",
-        "blog": "Blog (Où je prétends savoir des choses)"
+        "blog": "Blog (Où je prétends savoir des choses)",
+        "specialty": "Ma spécialité est",
+        "specialty_text": "casser des trucs avec React"
     },
     "SectionName": {
         "about": "À propos de moi (La dure vérité)",

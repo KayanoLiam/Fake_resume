@@ -4,7 +4,9 @@
         "name": "KayanoJackal",
         "short_intro": "私の完全に合法的なポートフォリオへようこそ！（ネタバレ：実際のスキルはありません）",
         "download_cv": "履歴書をダウンロード（警告：ほとんど空白）",
-        "blog": "ブログ（知ったかぶりをする場所）"
+        "blog": "ブログ（知ったかぶりをする場所）",
+        "specialty": "私の専門は",
+        "specialty_text": "Reactで物を壊すこと"
     },
     "SectionName": {
         "about": "私について（厳しい現実）",
