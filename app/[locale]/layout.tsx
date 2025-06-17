@@ -12,6 +12,14 @@ import WidgetWrapper from "@/components/WidgetWrapper"
 
 const inter = Inter({ subsets: ["latin"] })
 
+export const metadata = {
+  title: "KayanoJackal | Fake Portfolio",
+  description: "Welcome to my totally legitimate portfolio! (Spoiler: I have no actual skills)",
+  icons: {
+    icon: '/icon.jpg',
+  },
+}
+
 export default function RootLayout({
   children,
   params: { locale },

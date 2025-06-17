@@ -13,6 +13,8 @@ import { TypeAnimation } from "react-type-animation"
 import { useActiveSectionContext } from "@/context/action-section-context"
 import { useTranslations } from "next-intl"
 import useSound from "use-sound"
+import { useState } from "react"
+import ResumeDownloadModal from "./ResumeDownloadModal"
 
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"], weight: "400" })
 
@@ -22,22 +24,19 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
   const t = useTranslations("IntroSection")
   const [playHover] = useSound("/bubble.wav", { volume: 0.5 })
+  const [showModal, setShowModal] = useState(false)
 
   const handleDownloadCV = () => {
     if (activeLocale !== "en") {
-      const messages = {
-        ja: "申し訳ございませんが、他の言語は理解できませんでした。英語の履歴書のみご利用いただけます。😅",
-        fr: "Désolé, je n'ai pas réussi à apprendre les autres langues. Seul le CV en anglais est disponible. 😅",
-        de: "Entschuldigung, ich habe die anderen Sprachen nicht verstanden. Nur der englische Lebenslauf ist verfügbar. 😅"
-      }
-
-      const message = messages[activeLocale as keyof typeof messages] ||
-        "Sorry, I didn't learn other languages properly. Only English resume is available. 😅"
-
-      alert(message)
+      setShowModal(true)
+      return
     }
 
     // Always download English version
+    downloadResume()
+  }
+
+  const downloadResume = () => {
     const link = document.createElement('a')
     link.href = '/English.pdf'
     link.download = 'KayanoJackal-Resume.pdf'
@@ -188,7 +187,7 @@ export default function Intro() {
         </a>
         <a
           className=" bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://blog-joy-peng.netlify.app"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           target="_blank"
         >
           {t("blog")}
@@ -196,6 +195,13 @@ export default function Intro() {
           {/* <FaGithubSquare /> */}
         </a>
       </motion.div>
+
+      {/* Resume Download Modal */}
+      <ResumeDownloadModal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+        onDownload={downloadResume}
+      />
     </section>
   )
 }
