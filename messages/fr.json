@@ -1,0 +1,28 @@
+{
+    "IntroSection": {
+        "hello_im": "Salut, je suis",
+        "name": "KayanoJackal",
+        "short_intro": "Bienvenue sur mon portfolio totalement légitime ! (Spoiler : je n'ai aucune compétence réelle)",
+        "download_cv": "Télécharger CV (Attention : principalement vide)",
+        "blog": "Blog (Où je prétends savoir des choses)"
+    },
+    "SectionName": {
+        "about": "À propos de moi (La dure vérité)",
+        "experience": "Expérience (Le peu que j'ai)",
+        "projects": "Projets (Mes tentatives ratées)",
+        "skills": "Compétences (Quelles compétences ?)"
+    },
+    "AboutSection": {
+        "desc": "Soyons brutalement honnêtes - je suis essentiellement un imposteur professionnel dans le monde de la programmation. Bien que j'aie étudié dans des universités prestigieuses et fait des stages, la vérité est que je ne sais pas ce que je fais la plupart du temps. Je peux copier-coller du code depuis Stack Overflow comme un pro, et j'ai maîtrisé l'art de paraître occupé tout en déboguant la même erreur pendant 3 heures. Ma 'compréhension approfondie' de TypeScript consiste principalement à ajouter des types 'any' partout jusqu'à ce que les lignes rouges disparaissent. Quand je ne suis pas devant mon ordinateur à faire semblant d'être productif, j'aime cuisiner (brûler) de la nourriture, regarder des films (pour éviter de coder), et faire du sport (ma seule vraie compétence). Le vrai secret de mon énergie ? La caféine et le syndrome de l'imposteur ! 🤷‍♂️"
+    },
+    "ProjectsSection": {
+        "disclaimer": "Avertissement : Ces projets fonctionnent d'une manière ou d'une autre, mais je ne suis pas entièrement sûr de comment.",
+        "view_all": "Voir Tous Mes Échecs Glorieux"
+    },
+    "SkillsSection": {
+        "disclaimer": "Compétences que je prétends avoir (les résultats peuvent varier) :"
+    },
+    "ExperienceSection": {
+        "disclaimer": "Mon voyage de confusion professionnelle :"
+    }
+}

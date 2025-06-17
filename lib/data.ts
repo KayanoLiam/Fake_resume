@@ -36,13 +36,7 @@ export const links = [
 ] as const;
 
 
-export const headerLanguageMap = {
-    Home: '首页',
-    About: '关于我',
-    Projects: '我的项目',
-    Skills: '我的技能',
-    Experiences: '我的经历',
-}
+// Removed headerLanguageMap as we now use proper i18n
 
 export const experiencesData = [
     {
@@ -87,36 +81,7 @@ export const experiencesData = [
 
 ]
 
-export const experiencesDataZn = [
-    {
-        "title": "计算机与信息技术硕士",
-        "location": "英国圣安德鲁斯大学",
-        "description": "在人机交互、计算机通信系统和信息安全等领域深入学习。培养了计算思维、以用户为中心的设计和数据可视化方面的强大能力，预计以一等学位毕业（GPA17/20）。",
-        icon: React.createElement(LuGraduationCap),
-        "date": "2023年9月 - 2024年12月"
-    },
-    {
-        "title": "前端实习生",
-        "location": "蔚来汽车（中国武汉）",
-        "description": `参与团队多个平台的迭代开发，独立完成内部告警平台的值班表页面开发。协助开发蔚来第三代场站列表与详情页，集成百度地图 API 实现定位与选点功能。优化任务魔棒页面，新增管理员角色，重构权限管理逻辑，用头像列表展示管理员，并整合飞书 API 实现消息发送。自定义 Element-UI 级联选择组件，解决全选德国 2000+ 城市时浏览器卡死问题，通过懒加载优化显著提升性能。遵循 Agile/Scrum 开发流程，进行两周一迭代，通过 Jira 跟进项目需求，设计技术方案，并与测试、后端、产品及 设计团队密切对接。`,
-        "icon": React.createElement(FaVuejs),
-        "date": "2022年8月 - 2022年12月"
-    },
-    {
-        "title": "前端开发",
-        "location": "武汉大学大数据研究院",
-        "description": "使用umi（React框架）和Ant Design Pro开发和维护Finknow，一个金融知识图谱查询和分析平台。利用基于G6的React图分析工具包graphin开发了股权网络穿透图，增强了数据可视化功能。",
-        "icon": React.createElement(FaReact),
-        "date": "2022年5月 - 2022年8月"
-    },
-    {
-        "title": "数字出版学士",
-        "location": "武汉大学",
-        "description": "以3.81/4.0的GPA毕业，获得数字出版学士学位，掌握了数字媒体和出版技术的基础知识。",
-        "icon": React.createElement(LuGraduationCap),
-        "date": "2019年9月 - 2023年6月"
-    }
-]
+// Removed experiencesDataZn as we now use single data source with i18n
 
 
 export type ProjectTags = typeof projectsData[number]["tags"];
@@ -124,43 +89,55 @@ export type ProjectTags = typeof projectsData[number]["tags"];
 export const projectsData = [
     {
         "title": "Ethical Digital Nation Collaborative Platform",
-        "title_zh": "数字道德国家协作平台",
-        "description":
-            "A collaborative platform enhancing cooperation among Scottish higher education institutions in digital ethics.",
-        "desc_zh": "旨在促进苏格兰高校在数字道德领域合作的协作平台。该平台集成用户访谈、工作坊、OAuth登录、最新数字博客RSS feed显示、完备的事件管理系统（包含高级评分与评论功能）以及注重可访问性的响应式设计。",
+        "title_ja": "デジタル倫理国家協力プラットフォーム",
+        "title_fr": "Plateforme Collaborative de Nation Numérique Éthique",
+        "title_de": "Ethische Digitale Nation Kollaborationsplattform",
+        "description": "A collaborative platform enhancing cooperation among Scottish higher education institutions in digital ethics. (Disclaimer: I mostly copied code from tutorials and somehow it works!)",
+        "desc_ja": "スコットランドの高等教育機関間でのデジタル倫理協力を促進する協力プラットフォーム。（免責事項：主にチュートリアルからコードをコピーして、なぜか動いています！）",
+        "desc_fr": "Une plateforme collaborative améliorant la coopération entre les institutions d'enseignement supérieur écossaises en éthique numérique. (Avertissement : j'ai principalement copié du code de tutoriels et ça marche d'une manière ou d'une autre !)",
+        "desc_de": "Eine kollaborative Plattform zur Verbesserung der Zusammenarbeit zwischen schottischen Hochschuleinrichtungen in der digitalen Ethik. (Haftungsausschluss: Ich habe hauptsächlich Code aus Tutorials kopiert und irgendwie funktioniert es!)",
         "tags": ["React", "Next.js 14", "TypeScript", "TailwindCSS", "Convex", "Clerk"],
         "imageUrl": knowledgeSharingPlatformImage,
         "projectUrl": "https://github.com/Codefreyy/Ethical-Digital-Nation",
         "demoUrl": "https://yujie-ethical-digital-nation.netlify.app/"
     },
     {
-        title: "Typing Speed",
-        title_zh: '打字测验',
-        description:
-            "A comprehensive typing speed test application that tracks your overall typing performance. It provides detailed statistics, including total words typed, errors made, and accuracy rate, allowing users to monitor their progress and improve their typing efficiency.",
-        desc_zh: "一个打字速度测试应用。敲击即开始打字，计时结束后将显示总敲击单词数、正确率、错误率等。该应用UI简洁现代，支持Dark Mode切换。",
+        title: "Typing Speed Test",
+        title_ja: "タイピング速度テスト",
+        title_fr: "Test de Vitesse de Frappe",
+        title_de: "Tippgeschwindigkeitstest",
+        description: "A typing speed test that makes me feel bad about my own typing skills. Ironically, I spent more time debugging this than actually improving my typing speed.",
+        desc_ja: "私自身のタイピングスキルについて悪い気分にさせるタイピング速度テスト。皮肉なことに、実際にタイピング速度を向上させるよりもデバッグに多くの時間を費やしました。",
+        desc_fr: "Un test de vitesse de frappe qui me fait me sentir mal à propos de mes propres compétences de frappe. Ironiquement, j'ai passé plus de temps à déboguer ceci qu'à améliorer ma vitesse de frappe.",
+        desc_de: "Ein Tippgeschwindigkeitstest, der mich schlecht über meine eigenen Tippfähigkeiten fühlen lässt. Ironischerweise habe ich mehr Zeit mit dem Debuggen verbracht als tatsächlich meine Tippgeschwindigkeit zu verbessern.",
         tags: ["React", "TypeScript", "Tailwind", 'Framer Motion'],
         imageUrl: typingSpeedImage,
         projectUrl: 'https://github.com/Codefreyy/typing-speed-game',
         demoUrl: 'https://joy-typing-speed.netlify.app/',
     },
     {
-        title: "Breddit",
-        title_zh: "社交新闻论坛",
-        description:
-            `A modern full-stack Reddit clone with infinite scrolling, secure NextAuth Google authentication, and a custom feed for authenticated users. It uses Upstash Redis for caching and React-Query for efficient, responsive data fetching with optimistic updates.
-            `,
-        desc_zh: "一个现代且简洁的Reddit克隆项目，使用Next.js、TypeScript和Tailwind CSS构建。项目功能包括无限滚动动态加载帖子、NextAuth与Google认证、为认证用户提供自定义Feed、高级缓存、乐观更新、React-Query数据获取、美观的帖子编辑器、图片上传和链接预览、以及完整的评论功能。",
+        title: "Breddit (Reddit Clone)",
+        title_ja: "Breddit（Redditクローン）",
+        title_fr: "Breddit (Clone de Reddit)",
+        title_de: "Breddit (Reddit-Klon)",
+        description: "A Reddit clone that probably has more bugs than features. I spent 80% of the time trying to make authentication work and 20% wondering why I chose to clone Reddit of all things.",
+        desc_ja: "機能よりもバグの方が多いであろうRedditクローン。認証を動作させようとして80%の時間を費やし、20%の時間をなぜRedditをクローンすることを選んだのかと疑問に思って過ごしました。",
+        desc_fr: "Un clone de Reddit qui a probablement plus de bugs que de fonctionnalités. J'ai passé 80% du temps à essayer de faire fonctionner l'authentification et 20% à me demander pourquoi j'ai choisi de cloner Reddit entre toutes les choses.",
+        desc_de: "Ein Reddit-Klon, der wahrscheinlich mehr Bugs als Features hat. Ich habe 80% der Zeit damit verbracht, die Authentifizierung zum Laufen zu bringen, und 20% damit, mich zu fragen, warum ich ausgerechnet Reddit klonen wollte.",
         tags: ["Next.js", "TypeScript", "Upstash", "React-Query", "TailwindCSS"],
         imageUrl: breadditImage,
         projectUrl: 'https://github.com/Codefreyy/Breddit',
         demoUrl: 'https://joy-breddit.vercel.app/',
     },
     {
-        title: "Global Wealth Spectrum Visualisation",
-        title_zh: '世界财富可视化光谱',
-        description: "This interactive visualization explores how tax policies influence wealth, how industries impact fortunes differently by gender, and how these effects vary across continents. Dive into our data to uncover the complex layers of global wealth.",
-        desc_zh: "交互式可视化图表探讨了税收政策如何影响财富、不同行业对不同性别的财富的影响以及这些影响在各大洲之间的差异。深入了解我们的数据，揭示全球财富的复杂层次。",
+        title: "Global Wealth Spectrum Visualization",
+        title_ja: "グローバル富スペクトラム可視化",
+        title_fr: "Visualisation du Spectre de Richesse Mondiale",
+        title_de: "Globale Wohlstandsspektrum-Visualisierung",
+        description: "A data visualization that makes me realize how poor I am. Built with D3.js, which I definitely didn't struggle with for weeks trying to understand how selections work.",
+        desc_ja: "私がどれほど貧しいかを実感させるデータ可視化。D3.jsで構築されており、セレクションの仕組みを理解しようと何週間も苦労したことは絶対にありません。",
+        desc_fr: "Une visualisation de données qui me fait réaliser à quel point je suis pauvre. Construite avec D3.js, avec laquelle je n'ai définitivement pas lutté pendant des semaines pour comprendre comment fonctionnent les sélections.",
+        desc_de: "Eine Datenvisualisierung, die mir bewusst macht, wie arm ich bin. Erstellt mit D3.js, womit ich definitiv nicht wochenlang gekämpft habe, um zu verstehen, wie Selektionen funktionieren.",
         tags: ["d3.js", "HTML", "CSS", "Vanilla JavaScript"],
         imageUrl: visualizationImage,
         projectUrl: 'https://github.com/Codefreyy/d3-evolution-visualisation',

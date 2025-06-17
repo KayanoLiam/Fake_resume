@@ -8,17 +8,19 @@ import {
 import "react-vertical-timeline-component/style.min.css"
 import {
   experiencesData,
-  experiencesDataZn,
-  headerLanguageMap,
 } from "@/lib/data"
 import SectionHeading from "./SectionHeading"
 import { motion } from "framer-motion"
 import { useTheme } from "@/context/theme-context"
 import { ExperienceLabel } from "./ExperienceLabel"
-import { useLocale } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 export default function Experience({ isMobile }: { isMobile: boolean }) {
   const { theme } = useTheme()
+  const activeLocale = useLocale()
+  const sectionLan = useTranslations("SectionName")
+  const experienceT = useTranslations("ExperienceSection")
+
   const variants = {
     left: {
       hidden: { x: -200, opacity: 0 },
@@ -30,23 +32,19 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
     },
   }
 
-  const activeLocale = useLocale()
-
-  const experienceDataShown =
-    activeLocale == "zh" ? experiencesDataZn : experiencesData
-
   return (
     <section className="sm:mb-40 relative mb-20">
       <ExperienceLabel />
-      <SectionHeading>
-        {" "}
-        {activeLocale === "zh"
-          ? headerLanguageMap["Experiences"]
-          : "My Experiences"}
-      </SectionHeading>
+      <SectionHeading>{sectionLan("experience")}</SectionHeading>
+
+      <div className="mb-4 p-3 bg-blue-100 dark:bg-blue-900/20 border border-blue-300 dark:border-blue-700 rounded">
+        <p className="text-sm text-blue-700 dark:text-blue-300 italic">
+          {experienceT("disclaimer")}
+        </p>
+      </div>
       {!isMobile ? (
         <VerticalTimeline lineColor={theme == "light" ? "#e9e9ea" : "#3b3d4f"}>
-          {experienceDataShown.map((item, index) => (
+          {experiencesData.map((item, index) => (
             <motion.div
               key={index}
               initial="hidden"
@@ -91,7 +89,7 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
         </VerticalTimeline>
       ) : (
         <div className="flex flex-col gap-6">
-          {experienceDataShown.map((item, index) => (
+          {experiencesData.map((item, index) => (
             <div
               key={index}
               className={`flex dark:bg-slate-800 dark:text-slate-100 bg-slate-100 border-1 border-opacity-80 rounded-lg p-6 pb-8 flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8 `}

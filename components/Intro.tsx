@@ -37,7 +37,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="/profile.png"
+              src="/icon.jpg"
               alt="developer-image"
               width="250"
               height="250"

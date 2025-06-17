@@ -1,0 +1,28 @@
+{
+    "IntroSection": {
+        "hello_im": "Hallo, ich bin",
+        "name": "KayanoJackal",
+        "short_intro": "Willkommen zu meinem völlig legitimen Portfolio! (Spoiler: Ich habe keine echten Fähigkeiten)",
+        "download_cv": "Lebenslauf herunterladen (Warnung: Größtenteils leer)",
+        "blog": "Blog (Wo ich so tue, als wüsste ich etwas)"
+    },
+    "SectionName": {
+        "about": "Über mich (Die harte Wahrheit)",
+        "experience": "Erfahrung (Was wenig ich habe)",
+        "projects": "Projekte (Meine gescheiterten Versuche)",
+        "skills": "Fähigkeiten (Welche Fähigkeiten?)"
+    },
+    "AboutSection": {
+        "desc": "Seien wir brutal ehrlich - ich bin im Grunde ein professioneller Hochstapler in der Welt der Programmierung. Obwohl ich an schicken Universitäten studiert und Praktika gemacht habe, ist die Wahrheit, dass ich die meiste Zeit nicht weiß, was ich tue. Ich kann Code von Stack Overflow kopieren wie ein Profi, und ich habe die Kunst gemeistert, beschäftigt auszusehen, während ich 3 Stunden lang denselben Fehler debugge. Mein 'tiefes Verständnis' von TypeScript besteht hauptsächlich darin, überall 'any'-Typen hinzuzufügen, bis die roten Wellenlinien verschwinden. Wenn ich nicht vor meinem Computer sitze und so tue, als wäre ich produktiv, koche (verbrenne) ich gerne Essen, schaue Filme (um das Programmieren zu vermeiden) und treibe Sport (meine einzige echte Fähigkeit). Das wahre Geheimnis meiner Energie? Koffein und Hochstapler-Syndrom! 🤷‍♂️"
+    },
+    "ProjectsSection": {
+        "disclaimer": "Haftungsausschluss: Diese Projekte funktionieren irgendwie, aber ich bin mir nicht ganz sicher, wie.",
+        "view_all": "Alle Meine Glorreichen Misserfolge Ansehen"
+    },
+    "SkillsSection": {
+        "disclaimer": "Fähigkeiten, die ich vorgebe zu haben (Ergebnisse können variieren):"
+    },
+    "ExperienceSection": {
+        "disclaimer": "Meine Reise der beruflichen Verwirrung:"
+    }
+}

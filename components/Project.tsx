@@ -14,8 +14,12 @@ type ProjectProps = (typeof projectsData)[number]
 export default function Project({
   title,
   description,
-  desc_zh,
-  title_zh,
+  desc_ja,
+  desc_fr,
+  desc_de,
+  title_ja,
+  title_fr,
+  title_de,
   tags,
   imageUrl,
   projectUrl,
@@ -44,7 +48,9 @@ export default function Project({
           <div className="flex flex-col gap-3 items-start ">
             <h3 className="text-2xl font-semibold group-hover:text-pink dark:group-hover:text-yellow hover:underline">
               <Link href={demoUrl} target="_blank">
-                {activeLocale === "zh" ? title_zh : title}
+                {activeLocale === "ja" ? title_ja :
+                 activeLocale === "fr" ? title_fr :
+                 activeLocale === "de" ? title_de : title}
               </Link>
             </h3>
 
@@ -73,7 +79,9 @@ export default function Project({
           </div>
 
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {activeLocale === "zh" ? desc_zh : description}
+            {activeLocale === "ja" ? desc_ja :
+             activeLocale === "fr" ? desc_fr :
+             activeLocale === "de" ? desc_de : description}
           </p>
           <ul className="flex flex-wrap mt-auto gap-2">
             {tags.map((tag, index) => (
