@@ -4,14 +4,14 @@ import { motion } from "framer-motion"
 import { links } from "@/lib/data"
 import Link from "next/link"
 import clsx from "clsx"
-import { headerLanguageMap } from "@/lib/data"
 import { useActiveSectionContext } from "@/context/action-section-context"
-import { useLocale } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext()
   const activeLocale = useLocale()
+  const t = useTranslations("Navigation")
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -43,9 +43,7 @@ function Header() {
                   setTimeOfLastClick(Date.now())
                 }}
               >
-                {activeLocale === "zh"
-                  ? headerLanguageMap[link.name]
-                  : link.name}
+                {link.name}
                 {link.name === activeSection && (
                   <motion.span
                     className="bg-gray-100 rounded-full absolute inset-0 -z-10"
