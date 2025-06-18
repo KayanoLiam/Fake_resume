@@ -40,14 +40,29 @@ export const links = [
 export const experiencesData = [
     {
         title: "MSc in Pretending to Code",
+        title_ja: "コード偽装学修士号",
+        title_fr: "Master en Simulation de Codage",
+        title_de: "Master in Code-Vortäuschung",
         location: "University of Non-Existence, Imaginary Kingdom",
+        location_ja: "存在しない大学、想像上の王国",
+        location_fr: "Université de Non-Existence, Royaume Imaginaire",
+        location_de: "Universität der Nicht-Existenz, Imaginäres Königreich",
         description:
             "Obtained a completely fake Master's degree in Advanced Googling and Stack Overflow Studies. Specialized in copy-pasting code from AI assistants and pretending to understand what it does. Graduated with honors in 'Looking Busy While Actually Watching YouTube Tutorials'.",
+        description_ja: "高度なGoogle検索とStack Overflow研究の完全に偽の修士号を取得。AIアシスタントからコードをコピペして、それが何をするのか理解しているふりをすることを専門としました。「YouTubeチュートリアルを見ながら忙しそうに見せる」で優秀な成績で卒業。",
+        description_fr: "J'ai obtenu un diplôme de Master complètement faux en Recherche Google Avancée et Études Stack Overflow. Spécialisé dans le copier-coller de code d'assistants IA et faire semblant de comprendre ce que ça fait. Diplômé avec mention en 'Avoir l'air Occupé en Regardant des Tutoriels YouTube'.",
+        description_de: "Erhielt einen völlig gefälschten Master-Abschluss in Fortgeschrittener Google-Suche und Stack Overflow-Studien. Spezialisiert auf das Kopieren von Code von KI-Assistenten und so zu tun, als würde ich verstehen, was es macht. Abschluss mit Auszeichnung in 'Beschäftigt Aussehen während YouTube-Tutorials Schauen'.",
         icon: React.createElement(LuGraduationCap),
         date: "2023 Sep - 2024 May",
+        date_ja: "2023年9月 - 2024年5月",
+        date_fr: "Sep 2023 - Mai 2024",
+        date_de: "Sep 2023 - Mai 2024",
     },
     {
         title: "Professional Code Destroyer",
+        title_ja: "プロのコード破壊者",
+        title_fr: "Destructeur de Code Professionnel",
+        title_de: "Professioneller Code-Zerstörer",
         location: React.createElement("span", {},
             "Definitely Not ",
             React.createElement("a", {
@@ -57,26 +72,83 @@ export const experiencesData = [
             }, "NIO Inc."),
             " (They fired me)"
         ),
+        location_ja: React.createElement("span", {},
+            "絶対に",
+            React.createElement("a", {
+                href: "https://www.nio.com/",
+                style: { textDecoration: 'underline' },
+                target: "_blank"
+            }, "NIO Inc."),
+            "ではない（クビになった）"
+        ),
+        location_fr: React.createElement("span", {},
+            "Certainement Pas ",
+            React.createElement("a", {
+                href: "https://www.nio.com/",
+                style: { textDecoration: 'underline' },
+                target: "_blank"
+            }, "NIO Inc."),
+            " (Ils m'ont viré)"
+        ),
+        location_de: React.createElement("span", {},
+            "Definitiv Nicht ",
+            React.createElement("a", {
+                href: "https://www.nio.com/",
+                style: { textDecoration: 'underline' },
+                target: "_blank"
+            }, "NIO Inc."),
+            " (Sie haben mich gefeuert)"
+        ),
         description:
             "Successfully broke every single feature I touched. Turned a simple button into a 500-error generator. Spent 90% of my time asking ChatGPT how to fix the mess I created. Got really good at saying 'It works on my machine' and blaming the backend team.",
+        description_ja: "触ったすべての機能を見事に破壊しました。シンプルなボタンを500エラージェネレーターに変えました。作った混乱を修正する方法をChatGPTに聞くのに時間の90%を費やしました。「私のマシンでは動く」と言ってバックエンドチームを責めるのが得意になりました。",
+        description_fr: "J'ai réussi à casser chaque fonctionnalité que j'ai touchée. J'ai transformé un simple bouton en générateur d'erreur 500. J'ai passé 90% de mon temps à demander à ChatGPT comment réparer le désordre que j'avais créé. Je suis devenu très bon pour dire 'Ça marche sur ma machine' et blâmer l'équipe backend.",
+        description_de: "Ich habe erfolgreich jede einzelne Funktion kaputt gemacht, die ich berührt habe. Verwandelte einen einfachen Button in einen 500-Fehler-Generator. Verbrachte 90% meiner Zeit damit, ChatGPT zu fragen, wie ich das Chaos reparieren kann, das ich angerichtet hatte. Wurde sehr gut darin zu sagen 'Es funktioniert auf meiner Maschine' und das Backend-Team zu beschuldigen.",
         icon: React.createElement(FaVuejs),
         date: "2022 Aug - 2022 Dec",
+        date_ja: "2022年8月 - 2022年12月",
+        date_fr: "Août 2022 - Déc 2022",
+        date_de: "Aug 2022 - Dez 2022",
     },
     {
         title: "Chief Bug Producer",
+        title_ja: "チーフバグプロデューサー",
+        title_fr: "Producteur en Chef de Bugs",
+        title_de: "Chef-Bug-Produzent",
         location: "University of Chaos | Confusion City",
+        location_ja: "カオス大学 | 混乱市",
+        location_fr: "Université du Chaos | Ville de Confusion",
+        location_de: "Universität des Chaos | Verwirrungsstadt",
         description:
             "Maintained a Financial Platform by constantly breaking it and then asking AI to fix it. Became an expert at creating bugs faster than anyone could fix them. My greatest achievement was making a graph that displayed random numbers and calling it 'dynamic data visualization'.",
+        description_ja: "金融プラットフォームを常に壊してからAIに修正を依頼することで維持しました。誰よりも早くバグを作成する専門家になりました。最大の成果は、ランダムな数字を表示するグラフを作って「動的データ可視化」と呼んだことです。",
+        description_fr: "J'ai maintenu une Plateforme Financière en la cassant constamment puis en demandant à l'IA de la réparer. Je suis devenu expert dans la création de bugs plus rapidement que quiconque ne pouvait les corriger. Mon plus grand accomplissement a été de faire un graphique qui affichait des nombres aléatoires et de l'appeler 'visualisation de données dynamique'.",
+        description_de: "Ich wartete eine Finanzplattform, indem ich sie ständig kaputt machte und dann die KI bat, sie zu reparieren. Wurde Experte darin, Bugs schneller zu erstellen, als sie jemand beheben konnte. Meine größte Leistung war es, ein Diagramm zu erstellen, das zufällige Zahlen anzeigte und es 'dynamische Datenvisualisierung' zu nennen.",
         icon: React.createElement(FaReact),
         date: "2022 May - 2022 July",
+        date_ja: "2022年5月 - 2022年7月",
+        date_fr: "Mai 2022 - Juillet 2022",
+        date_de: "Mai 2022 - Juli 2022",
     },
     {
         title: "BA in Fictional Languages",
+        title_ja: "架空言語学士号",
+        title_fr: "Licence en Langues Fictives",
+        title_de: "Bachelor in Fiktiven Sprachen",
         location: "University of Make-Believe, Fantasy Land",
+        location_ja: "作り話大学、ファンタジーランド",
+        location_fr: "Université de Faire-Semblant, Pays Fantastique",
+        location_de: "Universität der Fantasie, Märchenland",
         description:
             "Graduated with a Bachelor's degree in absolutely nothing useful. Learned how to speak fluent nonsense and write essays about topics I completely made up. My thesis was titled 'Why I Have No Actual Skills: A Comprehensive Study'.",
+        description_ja: "全く役に立たない学士号を取得して卒業しました。流暢なナンセンスを話し、完全に作り上げたトピックについてエッセイを書く方法を学びました。私の論文のタイトルは「なぜ私には実際のスキルがないのか：包括的研究」でした。",
+        description_fr: "J'ai obtenu un diplôme de licence en absolument rien d'utile. J'ai appris à parler couramment le non-sens et à écrire des essais sur des sujets que j'ai complètement inventés. Ma thèse s'intitulait 'Pourquoi je n'ai aucune compétence réelle : Une étude complète'.",
+        description_de: "Ich graduierte mit einem Bachelor-Abschluss in absolut nichts Nützlichem. Lernte fließend Unsinn zu sprechen und Essays über Themen zu schreiben, die ich völlig erfunden hatte. Meine Abschlussarbeit trug den Titel 'Warum ich keine echten Fähigkeiten habe: Eine umfassende Studie'.",
         icon: React.createElement(LuGraduationCap),
         date: "2019 Sep - 2023 Jun",
+        date_ja: "2019年9月 - 2023年6月",
+        date_fr: "Sep 2019 - Juin 2023",
+        date_de: "Sep 2019 - Jun 2023",
     },
 
 ]

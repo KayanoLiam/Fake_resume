@@ -70,7 +70,9 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
                       ? "0.4rem solid #9ca3af"
                       : "0.4rem solid rgba(255, 255, 255, 0.5)",
                 }}
-                date={item.date}
+                date={activeLocale === "ja" ? item.date_ja :
+                      activeLocale === "fr" ? item.date_fr :
+                      activeLocale === "de" ? item.date_de : item.date}
                 icon={<>{item.icon}</>}
                 iconStyle={{
                   background:
@@ -78,10 +80,20 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
                   fontSize: "1.5rem",
                 }}
               >
-                <h3 className="font-bold capitalize">{item.title}</h3>
-                <p className="font-normal !mt-0">{item.location}</p>
+                <h3 className="font-bold capitalize">
+                  {activeLocale === "ja" ? item.title_ja :
+                   activeLocale === "fr" ? item.title_fr :
+                   activeLocale === "de" ? item.title_de : item.title}
+                </h3>
+                <p className="font-normal !mt-0">
+                  {activeLocale === "ja" ? item.location_ja :
+                   activeLocale === "fr" ? item.location_fr :
+                   activeLocale === "de" ? item.location_de : item.location}
+                </p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                  {item.description}
+                  {activeLocale === "ja" ? item.description_ja :
+                   activeLocale === "fr" ? item.description_fr :
+                   activeLocale === "de" ? item.description_de : item.description}
                 </p>
               </VerticalTimelineElement>
             </motion.div>
@@ -97,12 +109,24 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
               <div className="w-10 h-5 sm:w-24 sm:h-24 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
                 {item.icon}
               </div>
-              {item.date}
+              {activeLocale === "ja" ? item.date_ja :
+               activeLocale === "fr" ? item.date_fr :
+               activeLocale === "de" ? item.date_de : item.date}
               <div className="flex flex-col gap-2">
-                <h3 className="font-bold capitalize">{item.title}</h3>
-                <p className="font-normal !mt-0">{item.location}</p>
+                <h3 className="font-bold capitalize">
+                  {activeLocale === "ja" ? item.title_ja :
+                   activeLocale === "fr" ? item.title_fr :
+                   activeLocale === "de" ? item.title_de : item.title}
+                </h3>
+                <p className="font-normal !mt-0">
+                  {activeLocale === "ja" ? item.location_ja :
+                   activeLocale === "fr" ? item.location_fr :
+                   activeLocale === "de" ? item.location_de : item.location}
+                </p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                  {item.description}
+                  {activeLocale === "ja" ? item.description_ja :
+                   activeLocale === "fr" ? item.description_fr :
+                   activeLocale === "de" ? item.description_de : item.description}
                 </p>
               </div>
             </div>

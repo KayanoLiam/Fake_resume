@@ -43,8 +43,8 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[45rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[28rem]  transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 ">
-        <div className="group pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col items-start gap-3 h-full sm:group-even:ml-[18rem]">
+      <section className="bg-gray-100 max-w-[45rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:min-h-[28rem] transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 ">
+        <div className="group pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col items-start gap-3 sm:min-h-[28rem] sm:group-even:ml-[18rem]">
           <div className="flex flex-col gap-3 items-start ">
             <h3 className="text-2xl font-semibold group-hover:text-pink dark:group-hover:text-yellow hover:underline">
               <Link href={demoUrl} target="_blank">
@@ -100,7 +100,7 @@ export default function Project({
           alt="Project I worked on"
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
+        transition
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
         group-hover:translate-y-3
@@ -110,7 +110,8 @@ export default function Project({
         group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2
 
-        group-even:right-[initial] group-even:-left-40"
+        group-even:right-[initial] group-even:-left-40
+        z-10"
         />
       </section>
     </motion.div>
