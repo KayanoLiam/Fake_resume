@@ -72,7 +72,8 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
                 }}
                 date={activeLocale === "ja" ? item.date_ja :
                       activeLocale === "fr" ? item.date_fr :
-                      activeLocale === "de" ? item.date_de : item.date}
+                      activeLocale === "de" ? item.date_de :
+                      activeLocale === "zh" ? item.date_zh : item.date}
                 icon={<>{item.icon}</>}
                 iconStyle={{
                   background:
@@ -83,17 +84,20 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
                 <h3 className="font-bold capitalize">
                   {activeLocale === "ja" ? item.title_ja :
                    activeLocale === "fr" ? item.title_fr :
-                   activeLocale === "de" ? item.title_de : item.title}
+                   activeLocale === "de" ? item.title_de :
+                   activeLocale === "zh" ? item.title_zh : item.title}
                 </h3>
                 <p className="font-normal !mt-0">
                   {activeLocale === "ja" ? item.location_ja :
                    activeLocale === "fr" ? item.location_fr :
-                   activeLocale === "de" ? item.location_de : item.location}
+                   activeLocale === "de" ? item.location_de :
+                   activeLocale === "zh" ? item.location_zh : item.location}
                 </p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                   {activeLocale === "ja" ? item.description_ja :
                    activeLocale === "fr" ? item.description_fr :
-                   activeLocale === "de" ? item.description_de : item.description}
+                   activeLocale === "de" ? item.description_de :
+                   activeLocale === "zh" ? item.description_zh : item.description}
                 </p>
               </VerticalTimelineElement>
             </motion.div>
@@ -111,22 +115,26 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
               </div>
               {activeLocale === "ja" ? item.date_ja :
                activeLocale === "fr" ? item.date_fr :
-               activeLocale === "de" ? item.date_de : item.date}
+               activeLocale === "de" ? item.date_de :
+               activeLocale === "zh" ? item.date_zh : item.date}
               <div className="flex flex-col gap-2">
                 <h3 className="font-bold capitalize">
                   {activeLocale === "ja" ? item.title_ja :
                    activeLocale === "fr" ? item.title_fr :
-                   activeLocale === "de" ? item.title_de : item.title}
+                   activeLocale === "de" ? item.title_de :
+                   activeLocale === "zh" ? item.title_zh : item.title}
                 </h3>
                 <p className="font-normal !mt-0">
                   {activeLocale === "ja" ? item.location_ja :
                    activeLocale === "fr" ? item.location_fr :
-                   activeLocale === "de" ? item.location_de : item.location}
+                   activeLocale === "de" ? item.location_de :
+                   activeLocale === "zh" ? item.location_zh : item.location}
                 </p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                   {activeLocale === "ja" ? item.description_ja :
                    activeLocale === "fr" ? item.description_fr :
-                   activeLocale === "de" ? item.description_de : item.description}
+                   activeLocale === "de" ? item.description_de :
+                   activeLocale === "zh" ? item.description_zh : item.description}
                 </p>
               </div>
             </div>

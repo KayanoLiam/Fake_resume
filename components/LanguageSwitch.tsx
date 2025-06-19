@@ -16,13 +16,14 @@ export default function LanguageSwitch() {
     { code: 'en', label: 'EN', name: 'English' },
     { code: 'ja', label: 'JA', name: '日本語' },
     { code: 'fr', label: 'FR', name: 'Français' },
-    { code: 'de', label: 'DE', name: 'Deutsch' }
+    { code: 'de', label: 'DE', name: 'Deutsch' },
+    { code: 'zh', label: 'ZH', name: '中文' }
   ]
 
   const currentLanguage = languages.find(lang => lang.code === localActive) || languages[0]
 
   const onChangeLanguage = (newLocale: string) => {
-    const newPath = pathname.replace(/^\/(en|ja|fr|de)/, `/${newLocale}`)
+    const newPath = pathname.replace(/^\/(en|ja|fr|de|zh)/, `/${newLocale}`)
     router.replace(newPath, {
       scroll: false,
     })

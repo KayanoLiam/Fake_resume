@@ -1,0 +1,37 @@
+{
+    "IntroSection": {
+        "hello_im": "你好，我是",
+        "name": "KayanoJackal",
+        "short_intro": "欢迎来到我完全合法的作品集！（剧透：我其实没有任何真正的技能）",
+        "download_cv": "下载简历（警告：基本上是空白的）",
+        "blog": "博客（我假装懂东西的地方）",
+        "specialty": "我的专长是",
+        "specialty_text": "用React把东西搞坏"
+    },
+    "SectionName": {
+        "about": "关于我（残酷的真相）",
+        "experience": "经历（我那点可怜的经验）",
+        "projects": "项目（我失败的尝试）",
+        "skills": "技能（什么技能？）"
+    },
+    "AboutSection": {
+        "desc": "让我对你残酷地诚实一点——我基本上就是编程界的专业装逼犯。虽然我确实在一些高大上的大学学习过，也有过实习经历，但事实是我大部分时间都在摸索自己在做什么。我能像专业人士一样从Stack Overflow复制粘贴代码，并且掌握了在调试同一个错误3小时的同时看起来很忙的艺术。我对TypeScript的'深度理解'主要包括到处添加'any'类型，直到红色波浪线消失。当我不在电脑前假装高效工作时，我喜欢做饭（烧焦食物）、看电影（为了逃避编程）和健身（我唯一的真正技能）。我精力充沛的真正秘诀？咖啡因和冒名顶替综合症！🤷‍♂️"
+    },
+    "ProjectsSection": {
+        "disclaimer": "免责声明：这些项目不知怎么地能运行，但我不完全确定是怎么回事。",
+        "view_all": "查看我所有光荣的失败作品"
+    },
+    "SkillsSection": {
+        "disclaimer": "我假装拥有的技能（效果可能有所不同）："
+    },
+    "ExperienceSection": {
+        "disclaimer": "我的专业困惑之旅："
+    },
+    "Navigation": {
+        "home": "首页",
+        "about": "关于",
+        "projects": "项目",
+        "skills": "技能",
+        "experience": "经历"
+    }
+}

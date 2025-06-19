@@ -28,6 +28,7 @@ export default function About() {
           ⚠️ {activeLocale === "ja" && "免責事項：以下の内容は誇張されており、実際のスキルレベルを反映していない可能性があります。"}
           {activeLocale === "fr" && "Avertissement : Le contenu suivant est exagéré et peut ne pas refléter le niveau de compétence réel."}
           {activeLocale === "de" && "Warnung: Der folgende Inhalt ist übertrieben und spiegelt möglicherweise nicht das tatsächliche Fähigkeitsniveau wider."}
+          {activeLocale === "zh" && "免责声明：以下内容可能有所夸大，不一定反映实际技能水平。"}
           {activeLocale === "en" && "Disclaimer: The following content is exaggerated and may not reflect actual skill level."}
         </p>
       </div>
@@ -39,6 +40,7 @@ export default function About() {
           💡 {activeLocale === "ja" && "実際のところ、私には見せるべき本当のスキルやプロジェクトはありません。でも、このサイトはかっこよく見えませんか？"}
           {activeLocale === "fr" && "En réalité, je n'ai pas de vraies compétences ou projets à montrer. Mais ce site a l'air cool, non ?"}
           {activeLocale === "de" && "Ehrlich gesagt habe ich keine echten Fähigkeiten oder Projekte zu zeigen. Aber diese Website sieht cool aus, oder?"}
+          {activeLocale === "zh" && "说实话，我没有什么真正的技能或项目可以展示。但这个网站看起来很酷，对吧？"}
           {activeLocale === "en" && "Truth be told, I don't have any real skills or projects to show. But this website looks cool, right?"}
         </p>
       </div>

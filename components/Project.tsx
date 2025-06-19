@@ -17,9 +17,11 @@ export default function Project({
   desc_ja,
   desc_fr,
   desc_de,
+  desc_zh,
   title_ja,
   title_fr,
   title_de,
+  title_zh,
   tags,
   imageUrl,
   projectUrl,
@@ -50,7 +52,8 @@ export default function Project({
               <Link href={demoUrl} target="_blank">
                 {activeLocale === "ja" ? title_ja :
                  activeLocale === "fr" ? title_fr :
-                 activeLocale === "de" ? title_de : title}
+                 activeLocale === "de" ? title_de :
+                 activeLocale === "zh" ? title_zh : title}
               </Link>
             </h3>
 
@@ -81,7 +84,8 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {activeLocale === "ja" ? desc_ja :
              activeLocale === "fr" ? desc_fr :
-             activeLocale === "de" ? desc_de : description}
+             activeLocale === "de" ? desc_de :
+             activeLocale === "zh" ? desc_zh : description}
           </p>
           <ul className="flex flex-wrap mt-auto gap-2">
             {tags.map((tag, index) => (

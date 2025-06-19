@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, AnimatePresence } from "framer-motion"
-import { useLocale, useTranslations } from "next-intl"
+import { useLocale } from "next-intl"
 import { HiDownload, HiX } from "react-icons/hi"
 import { useTheme } from "@/context/theme-context"
 import useSound from "use-sound"
@@ -19,7 +19,6 @@ export default function ResumeDownloadModal({
   onDownload,
 }: ResumeDownloadModalProps) {
   const activeLocale = useLocale()
-  const t = useTranslations("ResumeModal")
   const { theme } = useTheme()
   const [playOpen] = useSound("/bubble.wav", { volume: 0.3 })
   const [playClose] = useSound("/light-off.mp3", { volume: 0.2 })
@@ -45,7 +44,7 @@ export default function ResumeDownloadModal({
       case "ja":
         return {
           title: "言語学習の失敗について 😅",
-          message: "申し訳ございませんが、他の言語をちゃんと学べませんでした。日本語、フランス語、ドイツ語は見た目だけで、実際には理解できていません。",
+          message: "申し訳ございませんが、他の言語をちゃんと学べませんでした。日本語、フランス語、ドイツ語、中国語は見た目だけで、実際には理解できていません。",
           explanation: "つまり、このサイトの翻訳は全部AIに頼んだもので、私の実際の語学力は英語だけです。恥ずかしい話ですが、これが現実です。",
           downloadText: "英語版履歴書をダウンロード",
           closeText: "閉じる"
@@ -53,7 +52,7 @@ export default function ResumeDownloadModal({
       case "fr":
         return {
           title: "À propos de mon échec linguistique 😅",
-          message: "Désolé, je n'ai pas réussi à apprendre correctement les autres langues. Le japonais, le français et l'allemand ne sont que pour l'apparence - je ne les comprends pas vraiment.",
+          message: "Désolé, je n'ai pas réussi à apprendre correctement les autres langues. Le japonais, le français, l'allemand et le chinois ne sont que pour l'apparence - je ne les comprends pas vraiment.",
           explanation: "En gros, toutes les traductions de ce site ont été faites par l'IA, et ma seule vraie compétence linguistique est l'anglais. C'est embarrassant, mais c'est la réalité.",
           downloadText: "Télécharger le CV en anglais",
           closeText: "Fermer"
@@ -61,15 +60,23 @@ export default function ResumeDownloadModal({
       case "de":
         return {
           title: "Über mein sprachliches Versagen 😅",
-          message: "Entschuldigung, ich habe die anderen Sprachen nicht richtig gelernt. Japanisch, Französisch und Deutsch sind nur zum Schein - ich verstehe sie nicht wirklich.",
+          message: "Entschuldigung, ich habe die anderen Sprachen nicht richtig gelernt. Japanisch, Französisch, Deutsch und Chinesisch sind nur zum Schein - ich verstehe sie nicht wirklich.",
           explanation: "Im Grunde wurden alle Übersetzungen dieser Website von KI gemacht, und meine einzige echte Sprachkompetenz ist Englisch. Es ist peinlich, aber das ist die Realität.",
           downloadText: "Englischen Lebenslauf herunterladen",
           closeText: "Schließen"
         }
+      case "zh":
+        return {
+          title: "关于我的语言学习失败 😅",
+          message: "抱歉，我没有好好学习其他语言。日语、法语、德语、中文都只是装样子的——我实际上并不理解它们。",
+          explanation: "基本上，这个网站的所有翻译都是AI做的，我唯一真正的语言技能就是英语。这很尴尬，但这就是现实。",
+          downloadText: "下载英文简历",
+          closeText: "关闭"
+        }
       default:
         return {
           title: "About My Language Learning Failure 😅",
-          message: "Sorry, I didn't learn other languages properly. Japanese, French, and German are just for show - I don't actually understand them.",
+          message: "Sorry, I didn't learn other languages properly. Japanese, French, German, and Chinese are just for show - I don't actually understand them.",
           explanation: "Basically, all translations on this site were done by AI, and my only real language skill is English. It's embarrassing, but that's the reality.",
           downloadText: "Download English Resume",
           closeText: "Close"
