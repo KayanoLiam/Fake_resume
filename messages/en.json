@@ -26,5 +26,11 @@
     },
     "ExperienceSection": {
         "disclaimer": "My journey of professional confusion:"
+    },
+    "FooterSection": {
+        "copyright": "All rights reserved (though I'm not sure what rights I actually have).",
+        "about_title": "About this fake resume:",
+        "about_desc": "Cobbled together with React & Next.js, TypeScript (with lots of 'any' types), Tailwind CSS, Framer Motion, Stack Overflow answers, and pure desperation. Hosted on Vercel because they're kind enough to host my disasters for free.",
+        "disclaimer": "⚠️ No actual skills were harmed in the making of this website. Any resemblance to real competence is purely coincidental."
     }
 }

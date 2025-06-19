@@ -33,5 +33,11 @@
         "projects": "项目",
         "skills": "技能",
         "experience": "经历"
+    },
+    "FooterSection": {
+        "copyright": "版权所有（虽然我不确定我实际拥有什么权利）。",
+        "about_title": "关于这个虚假简历：",
+        "about_desc": "用React & Next.js、TypeScript（大量'any'类型）、Tailwind CSS、Framer Motion、Stack Overflow答案和纯粹的绝望拼凑而成。托管在Vercel上，因为他们善良地免费托管我的灾难。",
+        "disclaimer": "⚠️ 在制作这个网站的过程中没有真正的技能受到伤害。任何与真正能力的相似之处纯属巧合。"
     }
 }

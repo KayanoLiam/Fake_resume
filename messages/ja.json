@@ -26,5 +26,11 @@
     },
     "ExperienceSection": {
         "disclaimer": "私の職業的混乱の旅："
+    },
+    "FooterSection": {
+        "copyright": "すべての権利を保有（ただし、実際にどんな権利があるのかわかりません）。",
+        "about_title": "この偽の履歴書について：",
+        "about_desc": "React & Next.js、TypeScript（大量の'any'型付き）、Tailwind CSS、Framer Motion、Stack Overflowの回答、そして純粋な絶望で寄せ集めました。Vercelでホストされています。彼らが私の災難を無料でホストしてくれる親切さに感謝です。",
+        "disclaimer": "⚠️ このウェブサイトの制作において、実際のスキルは一切傷つけられていません。真の能力との類似は純粋に偶然です。"
     }
 }

@@ -26,5 +26,11 @@
     },
     "ExperienceSection": {
         "disclaimer": "Meine Reise der beruflichen Verwirrung:"
+    },
+    "FooterSection": {
+        "copyright": "Alle Rechte vorbehalten (obwohl ich nicht sicher bin, welche Rechte ich tatsächlich habe).",
+        "about_title": "Über diesen gefälschten Lebenslauf:",
+        "about_desc": "Zusammengeschustert mit React & Next.js, TypeScript (mit vielen 'any'-Typen), Tailwind CSS, Framer Motion, Stack Overflow-Antworten und purer Verzweiflung. Gehostet auf Vercel, weil sie freundlich genug sind, meine Katastrophen kostenlos zu hosten.",
+        "disclaimer": "⚠️ Bei der Erstellung dieser Website wurden keine echten Fähigkeiten verletzt. Jede Ähnlichkeit mit echter Kompetenz ist rein zufällig."
     }
 }

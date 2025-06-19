@@ -26,5 +26,11 @@
     },
     "ExperienceSection": {
         "disclaimer": "Mon voyage de confusion professionnelle :"
+    },
+    "FooterSection": {
+        "copyright": "Tous droits réservés (bien que je ne sois pas sûr de quels droits j'ai réellement).",
+        "about_title": "À propos de ce faux CV :",
+        "about_desc": "Assemblé avec React & Next.js, TypeScript (avec beaucoup de types 'any'), Tailwind CSS, Framer Motion, des réponses de Stack Overflow, et du pur désespoir. Hébergé sur Vercel parce qu'ils sont assez gentils pour héberger mes désastres gratuitement.",
+        "disclaimer": "⚠️ Aucune compétence réelle n'a été blessée lors de la création de ce site web. Toute ressemblance avec une vraie compétence est purement fortuite."
     }
 }
